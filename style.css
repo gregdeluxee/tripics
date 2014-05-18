@@ -1,0 +1,173 @@
+body{
+	padding: 0;
+	margin: 0;
+	color: #fff;
+	font-family: "Open sans", sans-serif;
+	font-size: 13px;
+}
+
+h1, h2, h3{margin: 0;}
+
+h2{
+	font-size: 36px;
+}
+h3{
+	font-size: 18px;
+}
+
+
+#menu{
+	position: absolute;
+	z-index: 5000;
+	bottom: 0;
+	background: rgba(0,0,0,0.2);
+	width: 100%;
+	border-top: solid 2px #434897;
+}
+
+#menu button{
+	border: none;
+	background: none;
+	width: 30px;
+	margin: 10px 5px 10px -10px;
+	padding: 0;
+	vertical-align: middle;
+}
+
+#menu button span{
+	position: relative;
+	display: inline-block;
+	height: 4px;
+	width: 100%;
+	margin-bottom: 6px;
+	background: #fff;
+}
+	#menu button span:last-child{
+		margin-bottom: 0;
+	}
+
+
+#takePic{
+	position: absolute;
+	top: 9px;
+	right: 10px;
+	text-indent: -99999px;
+	width: 33px;
+	height: 25px;
+	display: inline-block;
+	background: url("photo.png") no-repeat;
+	background-size: cover;
+	vertical-align: middle;
+
+}
+
+
+#menu .center{
+	position: absolute;
+	width: 60%;
+	top: 10px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+#localiseMe{
+	position: relative;
+	text-indent: -99999px;
+	width: 17px;
+	height: 25px;
+	display: inline-block;
+	background: url("localise.png") no-repeat;
+	background-size: cover;
+	vertical-align: middle;
+}
+
+#menu form{
+	display: inline-block;
+	margin: 0 auto;
+	vertical-align: middle;
+	position: relative;
+	width: 80%;
+}
+	#menu form input[type=text]{
+		width: 100%;
+		background: rgba(0,0,0,0.2);
+		border: none;
+		border-radius: 20px;
+		padding: 5px 10px;
+		margin: 0;
+		color: #fff;
+		text-align: center;
+	}
+	::-webkit-input-placeholder { /* WebKit browsers */
+	    color:    #fff;
+	}
+	#menu form input[type=submit]{
+		display: none;
+		background: rgba(255,255,255,0.2);
+		border: none;
+		border-radius: 50px;
+		padding: 4px 5px;
+		color: #fff;
+	}
+
+	#menu form input[type=text].search{
+		width: 80%;		
+	}
+	#menu form input[type=submit].search{
+		display: inline-block;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pics{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url("maroc.jpg");
+	background-size: cover;
+}
+
+.pics .comment{
+	position: relative;
+	width: 85%;
+	margin: 0;
+}
+.pics .comment, .pics h2, .pics h3{
+	margin-left: 10px;
+	margin-top: 10px;
+}
+.pics h2, .pics h3{
+	margin-top: 5px;
+}
+.pics h3{
+	display: inline-block;
+}
+.pics .likes{
+	display: inline-block;
+	position: absolute;
+	right: 10px;
+	margin-top: 10px;
+}
+.pics .likes span{
+	vertical-align: middle;
+}
+.pics .heart{
+	width: 22px;
+	height: 20px;
+	display: inline-block;
+	background: url("heart.png") no-repeat;
+	background-size: cover;
+}
