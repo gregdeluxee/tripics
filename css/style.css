@@ -357,7 +357,7 @@ input[type=submit] {
 #connexion .form {
   position: absolute;
   bottom: 0;
-  height: 50%;
+  min-height: 50%;
   color: #434897;
 }
 /* line 63, ../sass/_connexion.scss */
