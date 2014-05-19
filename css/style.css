@@ -303,7 +303,7 @@ input[type=submit] {
 /* line 7, ../sass/_connexion.scss */
 #connexion .pics {
   position: relative;
-  height: 50%;
+  max-height: 50%;
 }
 /* line 11, ../sass/_connexion.scss */
 #connexion .pics h2, #connexion .pics h3 {
@@ -357,9 +357,11 @@ input[type=submit] {
 #connexion .form {
   position: absolute;
   bottom: 0;
+  width: 100%;
+  min-height: 50%;
   color: #434897;
 }
-/* line 62, ../sass/_connexion.scss */
+/* line 64, ../sass/_connexion.scss */
 #connexion .form h4 {
   color: #434897;
   font-weight: 600;
@@ -367,21 +369,21 @@ input[type=submit] {
   font-size: 18px;
   margin: 20px 0px 30px 0px;
 }
-/* line 70, ../sass/_connexion.scss */
+/* line 72, ../sass/_connexion.scss */
 #connexion .form label {
   display: block;
   text-align: center;
 }
-/* line 74, ../sass/_connexion.scss */
+/* line 76, ../sass/_connexion.scss */
 #connexion .form input {
   width: 60%;
   color: #434897;
 }
-/* line 78, ../sass/_connexion.scss */
+/* line 80, ../sass/_connexion.scss */
 #connexion .form input[type=text] {
   background: #fff;
 }
-/* line 81, ../sass/_connexion.scss */
+/* line 83, ../sass/_connexion.scss */
 #connexion .form p {
   text-align: center;
   margin-top: 20px;

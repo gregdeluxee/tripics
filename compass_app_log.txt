@@ -1527,3 +1527,10 @@ Load paths:
 2014-05-19 22:54:39 overwrite css/style.css 
 2014-05-19 22:56:12 overwrite css/style.css 
 2014-05-19 23:57:41 overwrite css/style.css 
+2014-05-20 00:01:27 overwrite css/style.css 
+2014-05-20 00:02:25     error sass/style.scss (Line 61 of sass/_connexion.scss: Invalid CSS after "        min-height": expected ";", was ": 50%;")
+2014-05-20 00:02:25 overwrite css/style.css 
+2014-05-20 00:02:47 overwrite css/style.css 
+2014-05-20 00:03:42 overwrite css/style.css 
+2014-05-20 00:03:48 overwrite css/style.css 
+2014-05-20 00:03:52 overwrite css/style.css 
