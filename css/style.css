@@ -357,10 +357,9 @@ input[type=submit] {
 #connexion .form {
   position: absolute;
   bottom: 0;
-  min-height: 50%;
   color: #434897;
 }
-/* line 63, ../sass/_connexion.scss */
+/* line 62, ../sass/_connexion.scss */
 #connexion .form h4 {
   color: #434897;
   font-weight: 600;
@@ -368,21 +367,21 @@ input[type=submit] {
   font-size: 18px;
   margin: 20px 0px 30px 0px;
 }
-/* line 71, ../sass/_connexion.scss */
+/* line 70, ../sass/_connexion.scss */
 #connexion .form label {
   display: block;
   text-align: center;
 }
-/* line 75, ../sass/_connexion.scss */
+/* line 74, ../sass/_connexion.scss */
 #connexion .form input {
   width: 60%;
   color: #434897;
 }
-/* line 79, ../sass/_connexion.scss */
+/* line 78, ../sass/_connexion.scss */
 #connexion .form input[type=text] {
   background: #fff;
 }
-/* line 82, ../sass/_connexion.scss */
+/* line 81, ../sass/_connexion.scss */
 #connexion .form p {
   text-align: center;
   margin-top: 20px;
