@@ -385,7 +385,7 @@ input[type=submit] {
 /* line 82, ../sass/_connexion.scss */
 #connexion .form p {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 20px;
   padding: 0px 50px;
   line-height: 1.3;
 }
