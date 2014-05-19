@@ -1,174 +1,388 @@
-body{
-	padding: 0;
-	margin: 0;
-	color: #fff;
-	font-family: "Open sans", sans-serif;
-	font-size: 13px;
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../Bureau/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
 }
 
-h1, h2, h3{margin: 0;}
-
-h2{
-	font-size: 36px;
-}
-h3{
-	font-size: 18px;
+/* line 22, ../../../../Bureau/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
 }
 
-
-#menu{
-	position: absolute;
-	z-index: 5000;
-	bottom: 0;
-	background: rgba(0,0,0,0.2);
-	width: 100%;
-	border-top: solid 2px #434897;
+/* line 24, ../../../../Bureau/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
 }
 
-#menu button{
-	border: none;
-	background: none;
-	width: 30px;
-	margin: 10px 5px 10px -10px;
-	padding: 0;
-	vertical-align: middle;
+/* line 26, ../../../../Bureau/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-#menu button span{
-	position: relative;
-	display: inline-block;
-	height: 4px;
-	width: 100%;
-	margin-bottom: 6px;
-	background: #fff;
-}
-	#menu button span:last-child{
-		margin-bottom: 0;
-	}
-
-
-#takePic{
-	position: absolute;
-	top: 9px;
-	right: 10px;
-	text-indent: -99999px;
-	width: 33px;
-	height: 25px;
-	display: inline-block;
-	background: url("../img/photo.png") no-repeat;
-	background-size: cover;
-	vertical-align: middle;
-
+/* line 28, ../../../../Bureau/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
 }
 
-
-#menu .center{
-	position: absolute;
-	width: 60%;
-	top: 10px;
-	left: 0;
-	right: 0;
-	margin: auto;
+/* line 30, ../../../../Bureau/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../Bureau/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
 }
 
-#localiseMe{
-	position: relative;
-	text-indent: -99999px;
-	width: 17px;
-	height: 25px;
-	display: inline-block;
-	background: url("../img/localise.png") no-repeat;
-	background-size: cover;
-	vertical-align: middle;
+/* line 32, ../../../../Bureau/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
 }
 
-#menu form{
-	display: inline-block;
-	margin: 0 auto;
-	vertical-align: middle;
-	position: relative;
-	width: 80%;
-}
-	#menu form input[type=text]{
-		width: 100%;
-		background: rgba(0,0,0,0.2);
-		border: none;
-		border-radius: 20px;
-		padding: 5px 10px;
-		margin: 0;
-		color: #fff;
-		text-align: center;
-	}
-	::-webkit-input-placeholder { /* WebKit browsers */
-	    color:    #fff;
-	}
-	#menu form input[type=submit]{
-		display: none;
-		background: rgba(255,255,255,0.2);
-		border: none;
-		border-radius: 50px;
-		padding: 4px 5px;
-		color: #fff;
-	}
-
-	#menu form input[type=text].search{
-		width: 80%;		
-	}
-	#menu form input[type=submit].search{
-		display: inline-block;
-	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.pics{
-	position: absolute;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background: url("../img/maroc.jpg");
-	background-position: center;
-	background-size: cover;
+/* line 116, ../../../../Bureau/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
 }
 
-.pics .comment{
-	position: relative;
-	width: 85%;
-	margin: 0;
+/************************************************************************/
+/*	Colors Vars                                                          
+/************************************************************************/
+/************************************************************************/
+/*	Transition Default
+/************************************************************************/
+/* line 1, ../sass/_layout.scss */
+body {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-family: "Open sans", sans-serif;
+  font-size: 13px;
+  line-height: 1;
 }
-.pics .comment, .pics h2, .pics h3{
-	margin-left: 10px;
-	margin-top: 10px;
+
+/* line 10, ../sass/_layout.scss */
+.hidden {
+  display: none;
 }
-.pics h2, .pics h3{
-	margin-top: 5px;
+
+/* line 13, ../sass/_layout.scss */
+h1, h2, h3 {
+  margin: 0;
 }
-.pics h3{
-	display: inline-block;
+
+/* line 15, ../sass/_layout.scss */
+h2 {
+  font-size: 36px;
 }
-.pics .likes{
-	display: inline-block;
-	position: absolute;
-	right: 10px;
-	margin-top: 10px;
+
+/* line 18, ../sass/_layout.scss */
+h3 {
+  font-size: 18px;
 }
-.pics .likes span{
-	vertical-align: middle;
+
+/* line 21, ../sass/_layout.scss */
+a {
+  text-decoration: none;
+  color: #6a72f0;
 }
-.pics .heart{
-	width: 22px;
-	height: 20px;
-	display: inline-block;
-	background: url("../img/heart.png") no-repeat;
-	background-size: cover;
+
+/* line 26, ../sass/_layout.scss */
+input[type=text] {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 20px;
+  padding: 8px 10px;
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* line 36, ../sass/_layout.scss */
+input[type=submit] {
+  background: #d6d7f0;
+  border: none;
+  border-radius: 50px;
+  padding: 8px 10px;
+  color: #fff;
+}
+
+/* line 43, ../sass/_layout.scss */
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #434897;
+}
+
+/* line 52, ../sass/_layout.scss */
+#menu {
+  position: absolute;
+  z-index: 5000;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  border-top: solid 2px #434897;
+}
+/* line 61, ../sass/_layout.scss */
+#menu button {
+  border: none;
+  background: none;
+  width: 30px;
+  margin: 10px 5px 10px -10px;
+  padding: 0;
+  vertical-align: middle;
+}
+/* line 70, ../sass/_layout.scss */
+#menu button span {
+  position: relative;
+  display: inline-block;
+  height: 4px;
+  width: 100%;
+  margin-bottom: 6px;
+  background: #fff;
+}
+/* line 78, ../sass/_layout.scss */
+#menu button span:last-child {
+  margin-bottom: 0;
+}
+/* line 83, ../sass/_layout.scss */
+#menu .center {
+  position: absolute;
+  width: 60%;
+  top: 10px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+/* line 92, ../sass/_layout.scss */
+#menu form {
+  display: inline-block;
+  margin: 0 auto;
+  vertical-align: middle;
+  position: relative;
+  width: 80%;
+}
+/* line 99, ../sass/_layout.scss */
+#menu form input[type=text] {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin: 0;
+  color: #fff;
+  text-align: center;
+}
+/* line 110, ../sass/_layout.scss */
+#menu form input[type=text]::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #fff;
+}
+/* line 114, ../sass/_layout.scss */
+#menu form input[type=submit] {
+  display: none;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 50px;
+  padding: 4px 5px;
+  color: #fff;
+}
+/* line 123, ../sass/_layout.scss */
+#menu form input[type=text].search {
+  width: 80%;
+}
+/* line 126, ../sass/_layout.scss */
+#menu form input[type=submit].search {
+  display: inline-block;
+}
+
+/* line 132, ../sass/_layout.scss */
+#takePic {
+  position: absolute;
+  top: 9px;
+  right: 10px;
+  text-indent: -99999px;
+  width: 33px;
+  height: 25px;
+  display: inline-block;
+  background: url("../img/photo.png") no-repeat;
+  background-size: cover;
+  vertical-align: middle;
+}
+
+/* line 145, ../sass/_layout.scss */
+#localiseMe {
+  position: relative;
+  text-indent: -99999px;
+  width: 17px;
+  height: 25px;
+  display: inline-block;
+  background: url("../img/localise.png") no-repeat;
+  background-size: cover;
+  vertical-align: middle;
+}
+
+/* line 156, ../sass/_layout.scss */
+.pics {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/maroc.jpg");
+  background-position: center;
+  background-size: cover;
+}
+/* line 166, ../sass/_layout.scss */
+.pics .pics .comment {
+  position: relative;
+  width: 85%;
+  margin: 0;
+}
+/* line 171, ../sass/_layout.scss */
+.pics .comment, .pics h2, .pics h3 {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+/* line 175, ../sass/_layout.scss */
+.pics h2, .pics h3 {
+  margin-top: 5px;
+}
+/* line 178, ../sass/_layout.scss */
+.pics h3 {
+  display: inline-block;
+}
+/* line 181, ../sass/_layout.scss */
+.pics .likes {
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  margin-top: 10px;
+}
+/* line 187, ../sass/_layout.scss */
+.pics .likes span {
+  vertical-align: middle;
+}
+/* line 191, ../sass/_layout.scss */
+.pics .heart {
+  width: 22px;
+  height: 20px;
+  display: inline-block;
+  background: url("../img/heart.png") no-repeat;
+  background-size: cover;
+}
+
+/************************************************************************/
+/*  connexion
+/************************************************************************/
+/* line 6, ../sass/_connexion.scss */
+#connexion .pics {
+  position: relative;
+  height: 50%;
+}
+/* line 10, ../sass/_connexion.scss */
+#connexion .pics h2, #connexion .pics h3 {
+  display: block;
+  margin: 0;
+}
+/* line 14, ../sass/_connexion.scss */
+#connexion .pics h2 {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+/* line 18, ../sass/_connexion.scss */
+#connexion .pics h3 {
+  text-align: right;
+  margin-right: 10px;
+  margin-top: -20px;
+}
+/* line 25, ../sass/_connexion.scss */
+#connexion .onglet {
+  position: relative;
+  height: 10%;
+  top: -10%;
+}
+/* line 30, ../sass/_connexion.scss */
+#connexion .onglet span {
+  background: #6a72f0;
+  padding: 10px 30px;
+  position: absolute;
+  bottom: 0;
+  font-size: 18px;
+}
+/* line 37, ../sass/_connexion.scss */
+#connexion .onglet span:first-child {
+  border-top-right-radius: 15px;
+  left: 0;
+}
+/* line 41, ../sass/_connexion.scss */
+#connexion .onglet span:nth-child(2) {
+  border-top-left-radius: 15px;
+  right: 0;
+}
+/* line 46, ../sass/_connexion.scss */
+#connexion .onglet .line {
+  background: #434897;
+  width: 100%;
+  height: 5%;
+  position: absolute;
+  bottom: 0;
+}
+/* line 56, ../sass/_connexion.scss */
+#connexion .form {
+  position: absolute;
+  bottom: 0;
+  height: 50%;
+  color: #434897;
+  background: #f4f5f6;
+}
+/* line 63, ../sass/_connexion.scss */
+#connexion .form h4 {
+  color: #434897;
+  font-weight: 600;
+  text-align: center;
+  font-size: 18px;
+  margin: 20px 0px 30px 0px;
+}
+/* line 71, ../sass/_connexion.scss */
+#connexion .form label {
+  display: block;
+  text-align: center;
+}
+/* line 75, ../sass/_connexion.scss */
+#connexion .form input {
+  width: 60%;
+  color: #434897;
+}
+/* line 79, ../sass/_connexion.scss */
+#connexion .form input[type=text] {
+  background: #fff;
+}
+/* line 82, ../sass/_connexion.scss */
+#connexion .form p {
+  text-align: center;
+  margin-top: 40px;
+  padding: 0px 50px;
+  line-height: 1.3;
 }

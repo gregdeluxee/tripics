@@ -6,31 +6,45 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
-<body>
-
-	<div id="menu">
-		<button><span></span><span></span><span></span></button>
-		<div class="center">
-			<a href="test.html" id="localiseMe">Me localiser</a>
-			<form>
-				<input class="" type="text" placeholder="Cherche un endroit">
-				<input class="" type="submit" value="ok">
-			</form>
-		</div>
-		<a href="#" id="takePic">Prendre une photo</a>
-			
-	</div>
+<body id="connexion">
 
 	<div class="pics">
-		<p class="comment">Si vous passez près de meknes, allez voir l’ancienne cité romaine volubilis, ça vaut le coup d’oeil ! Il y a une petite surprise haha</p>
 		<h2>Maroc</h2>
 		<h3>Volubilis</h3>
-		<div class="likes">
-			<span>234</span>
-			<span class="heart"></span>
+	</div>
+	<div class="onglet">
+		<span id="test1">Inscription</span>
+		<span id="test2">Connexion</span>
+		<div class="line"></div>
+	</div>
+	<div class="form">
+		<div class="inscription">
+			<h4>Inscris toi et explore le monde !</h4>
+			<form>
+				<label>
+					<input type="text" placeholder="Pseudo">
+					<input type="text" placeholder="Mail">
+					<input type="text" placeholder="Mot de passe">
+					<input type="submit" value="Inscription">
+				</label>
+			</form>
+			<p>En vous inscrivant, vous confirmez avoir lu et accepter <a href="#">les condition d’utilisation</a></p>
+		</div>
+		<div class="connexion hidden">
+			<h4>Connecte toi et explore le monde !</h4>
+			<form>
+				<label>
+					<input type="text" placeholder="Pseudo">
+					<input type="text" placeholder="Mot de passe">
+					<input type="submit" value="Connexion">
+				</label>
+			</form>
+			<p><a href="#">Pseudo ou mot de passe oublié ?</a></p>
 		</div>
 	</div>
 
-	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/vendor/zepto.min.js"></script>
+	<script type="text/javascript" src="js/vendor/touch.js"></script>
+	<script type="text/javascript" src="js/connexion.js"></script>
 </body>
 </html>
