@@ -110,9 +110,9 @@ a {
 }
 
 /* line 26, ../sass/_layout.scss */
-input[type=text] {
+input[type=text], input[type=password], input[type=email] {
   width: 100%;
-  background: rgba(0, 0, 0, 0.2);
+  background: white;
   border: none;
   border-radius: 20px;
   padding: 8px 10px;
@@ -136,7 +136,12 @@ input[type=submit] {
   color: #434897;
 }
 
-/* line 52, ../sass/_layout.scss */
+/* line 46, ../sass/_layout.scss */
+input:focus {
+  outline: none !important;
+}
+
+/* line 55, ../sass/_layout.scss */
 #menu {
   position: absolute;
   z-index: 5000;
@@ -145,7 +150,7 @@ input[type=submit] {
   width: 100%;
   border-top: solid 2px #434897;
 }
-/* line 61, ../sass/_layout.scss */
+/* line 64, ../sass/_layout.scss */
 #menu button {
   border: none;
   background: none;
@@ -154,7 +159,7 @@ input[type=submit] {
   padding: 0;
   vertical-align: middle;
 }
-/* line 70, ../sass/_layout.scss */
+/* line 73, ../sass/_layout.scss */
 #menu button span {
   position: relative;
   display: inline-block;
@@ -163,11 +168,11 @@ input[type=submit] {
   margin-bottom: 6px;
   background: #fff;
 }
-/* line 78, ../sass/_layout.scss */
+/* line 81, ../sass/_layout.scss */
 #menu button span:last-child {
   margin-bottom: 0;
 }
-/* line 83, ../sass/_layout.scss */
+/* line 86, ../sass/_layout.scss */
 #menu .center {
   position: absolute;
   width: 60%;
@@ -176,7 +181,7 @@ input[type=submit] {
   right: 0;
   margin: auto;
 }
-/* line 92, ../sass/_layout.scss */
+/* line 95, ../sass/_layout.scss */
 #menu form {
   display: inline-block;
   margin: 0 auto;
@@ -184,7 +189,7 @@ input[type=submit] {
   position: relative;
   width: 80%;
 }
-/* line 99, ../sass/_layout.scss */
+/* line 102, ../sass/_layout.scss */
 #menu form input[type=text] {
   width: 100%;
   background: rgba(0, 0, 0, 0.2);
@@ -195,12 +200,12 @@ input[type=submit] {
   color: #fff;
   text-align: center;
 }
-/* line 110, ../sass/_layout.scss */
+/* line 113, ../sass/_layout.scss */
 #menu form input[type=text]::-webkit-input-placeholder {
   /* WebKit browsers */
   color: #fff;
 }
-/* line 114, ../sass/_layout.scss */
+/* line 117, ../sass/_layout.scss */
 #menu form input[type=submit] {
   display: none;
   background: rgba(255, 255, 255, 0.2);
@@ -209,16 +214,16 @@ input[type=submit] {
   padding: 4px 5px;
   color: #fff;
 }
-/* line 123, ../sass/_layout.scss */
+/* line 126, ../sass/_layout.scss */
 #menu form input[type=text].search {
   width: 80%;
 }
-/* line 126, ../sass/_layout.scss */
+/* line 129, ../sass/_layout.scss */
 #menu form input[type=submit].search {
   display: inline-block;
 }
 
-/* line 132, ../sass/_layout.scss */
+/* line 135, ../sass/_layout.scss */
 #takePic {
   position: absolute;
   top: 9px;
@@ -232,7 +237,7 @@ input[type=submit] {
   vertical-align: middle;
 }
 
-/* line 145, ../sass/_layout.scss */
+/* line 148, ../sass/_layout.scss */
 #localiseMe {
   position: relative;
   text-indent: -99999px;
@@ -244,7 +249,7 @@ input[type=submit] {
   vertical-align: middle;
 }
 
-/* line 156, ../sass/_layout.scss */
+/* line 159, ../sass/_layout.scss */
 .pics {
   position: absolute;
   top: 0;
@@ -254,37 +259,37 @@ input[type=submit] {
   background-position: center;
   background-size: cover;
 }
-/* line 166, ../sass/_layout.scss */
+/* line 169, ../sass/_layout.scss */
 .pics .pics .comment {
   position: relative;
   width: 85%;
   margin: 0;
 }
-/* line 171, ../sass/_layout.scss */
+/* line 174, ../sass/_layout.scss */
 .pics .comment, .pics h2, .pics h3 {
   margin-left: 10px;
   margin-top: 10px;
 }
-/* line 175, ../sass/_layout.scss */
+/* line 178, ../sass/_layout.scss */
 .pics h2, .pics h3 {
   margin-top: 5px;
 }
-/* line 178, ../sass/_layout.scss */
+/* line 181, ../sass/_layout.scss */
 .pics h3 {
   display: inline-block;
 }
-/* line 181, ../sass/_layout.scss */
+/* line 184, ../sass/_layout.scss */
 .pics .likes {
   display: inline-block;
   position: absolute;
   right: 10px;
   margin-top: 10px;
 }
-/* line 187, ../sass/_layout.scss */
+/* line 190, ../sass/_layout.scss */
 .pics .likes span {
   vertical-align: middle;
 }
-/* line 191, ../sass/_layout.scss */
+/* line 194, ../sass/_layout.scss */
 .pics .heart {
   width: 22px;
   height: 20px;

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "me.pictrip.app"
+        versionCode="1"
+        version   = "0.0.1">
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>Pictrips</name>
+
+    <description>
+    Application that allow people to share and view photos from around the world
+    </description>
+
+    <author href="http://pictrip.com" email="gregdeluxee@gmail.com">
+        Grégory Meis
+    </author>
+
+    <access origin="http://pictrip.com" />
+
+    <preference name="Fullscreen" value="false" />
+
+    <preference name="Orientation" value="portrait" />
+
+    <preference name="HideKeyboardFormAccessoryBar" value="true"/>
+
+    <gap:platform name="android" />
+
+    <gap:plugin name="org.apache.cordova.camera" />
+
+</widget>
+

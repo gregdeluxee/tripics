@@ -1542,3 +1542,11 @@ Load paths:
 2014-05-20 00:10:29 overwrite css/style.css 
 2014-05-20 00:10:36 overwrite css/style.css 
 2014-05-20 00:16:59 overwrite css/style.css 
+2014-05-20 00:21:50 overwrite css/style.css 
+2014-05-20 00:22:07     error sass/style.scss (Line 28 of sass/_layout.scss: Alpha channel 255.2 must be between 0 and 1 for `rgba')
+2014-05-20 00:22:07 overwrite css/style.css 
+2014-05-20 00:22:13 overwrite css/style.css 
+2014-05-20 00:26:46 overwrite css/style.css 
+2014-05-20 00:27:04 overwrite css/style.css 
+2014-05-20 00:27:10 overwrite css/style.css 
+2014-05-20 00:27:16 overwrite css/style.css 

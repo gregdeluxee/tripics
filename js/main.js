@@ -1,3 +1,7 @@
+//START Zepto
+;(function($){
+
+
 var searchMenu = document.querySelector("#menu input[type=text]");
 searchMenu.onfocus=function(){
 	this.className = "search";
@@ -7,3 +11,25 @@ searchMenu.onblur=function(){
 	this.className = "";
 	document.querySelector("#menu input[type=submit]").className = "";
 }
+
+
+$("#spanTest").click(function(){
+	navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
+	    destinationType: Camera.DestinationType.DATA_URL
+	});
+});
+	
+
+function onSuccess(imageData) {
+    var image = document.getElementById('pictureTest');
+    image.src = "data:image/jpeg;base64," + imageData;
+}
+
+function onFail(message) {
+    alert('Failed because: ' + message);
+}
+
+
+
+})(Zepto)
+
