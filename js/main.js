@@ -26,7 +26,7 @@ searchMenu.onblur=function(){
 
 
 function onSuccess(imageData) {
-    $(".pics").css("background", "url(data:image/jpeg;base64," + imageData + ")");
+    $(".pics").css("background-image", "url(data:image/jpeg;base64," + imageData + ")");
 }
 
 function onFail(message) {
