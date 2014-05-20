@@ -21,12 +21,13 @@
 
     <preference name="Fullscreen" value="false" />
 
-    <preference name="Orientation" value="portrait" />
+    <preference name="Orientation" value="portrait-only" />
 
     <preference name="HideKeyboardFormAccessoryBar" value="true"/>
 
     <gap:platform name="android" />
 
+    <gap:plugin name="org.apache.cordova.device" version="0.2.8" />
     <gap:plugin name="org.apache.cordova.camera" version="0.2.9" />
 
     <feature name="Camera">
