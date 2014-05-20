@@ -13,7 +13,7 @@ searchMenu.onblur=function(){
 }
 
 
-$("#spanTest").click(function(){
+$("#spanTest").tap(function(){
 	navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
 	    destinationType: Camera.DestinationType.DATA_URL
 	});
