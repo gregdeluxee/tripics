@@ -13,13 +13,6 @@ searchMenu.onblur=function(){
 }
 
 
-$("#spanTest").tap(function(){
-	navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
-	    destinationType: Camera.DestinationType.DATA_URL
-	});
-});
-	
-
 function onSuccess(imageData) {
     var image = document.getElementById('pictureTest');
     image.src = "data:image/jpeg;base64," + imageData;
@@ -28,6 +21,14 @@ function onSuccess(imageData) {
 function onFail(message) {
     alert('Failed because: ' + message);
 }
+
+$("#spanTest").tap(function(){
+	navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
+	    destinationType: Camera.DestinationType.DATA_URL
+	});
+});
+	
+
 
 
 
