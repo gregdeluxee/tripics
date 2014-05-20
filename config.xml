@@ -20,9 +20,6 @@
     <access origin="http://pictrip.com" />
 
     <preference name="Fullscreen" value="false" />
-
-    <preference name="Orientation" value="portrait-only" />
-
     <preference name="HideKeyboardFormAccessoryBar" value="true"/>
 
     <gap:platform name="android" />
