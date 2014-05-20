@@ -7,7 +7,7 @@ var destinationType; // sets the format of returned value
 document.addEventListener("deviceready",onDeviceReady,false);
 
 function onDeviceReady() {
-    pictureSource=navigator.camera.PictureSourceType;
+    pictureSource=navigator.camera.PictureSourceType.CAMERA;
     destinationType=navigator.camera.DestinationType;
     window.plugins.orientationLock.lock("landscape");
 }
@@ -36,6 +36,12 @@ function onFail(message) {
 }
 
 $("#takePic").tap(function(){
+
+	if (!navigator.camera) {
+        alert("Camera API not supported", "Error");
+        return;
+    }
+    
 	navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
 	    destinationType: Camera.DestinationType.DATA_URL
 	});
