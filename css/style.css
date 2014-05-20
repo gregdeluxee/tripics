@@ -260,7 +260,7 @@ input:focus {
   background-size: cover;
 }
 /* line 169, ../sass/_layout.scss */
-.pics .pics .comment {
+.pics .comment {
   position: relative;
   width: 85%;
   margin: 0;
