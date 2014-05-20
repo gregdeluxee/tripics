@@ -22,7 +22,7 @@ function onFail(message) {
     alert('Failed because: ' + message);
 }
 
-$("#spanTest").tap(function(){
+$("#takePic").tap(function(){
 	navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
 	    destinationType: Camera.DestinationType.DATA_URL
 	});
